@@ -61,6 +61,10 @@ Type | Description
 [Letting.Tenancy.Created](#lettingtenancycreated) | A tenancy has been created; does not reliably signal a tenant move in. A tenancy is uniquely identified by contract reference, tentant reference and unit reference
 [Letting.Tenancy.Updated](#lettingtenancyupdated) | Start and / or end date of a tenancy have been changed
 [Letting.Tenancy.Deleted](#lettingtenancydeleted) | A tenancy has been deleted; this means that the tenancy never became effective
+[Letting.Tenancy.Confirmed](#lettingtenancyconfirmed) | It has been confirmed a tenant will start a new tenancy. This indicates that a tenant moves in or that the contractual change has happend. Be aware that the confirmation can be recalled.
+[Letting.Tenancy.ConfirmationCancelled](#lettingtenancyconfirmationcancelled) | The previously issued tenancy confirmation has been cancelled |
+[Letting.Tenancy.Ended](#lettingtenancyended) | The tenancy for a tenant will end. This indicates that a tenant will move out or that a contractual change will happen. Be aware that this event can be cancelled. |
+[Letting.Tenancy.EndCancelled](#lettingtenancyendcancelled) | The previously reported end of tenancy has been cancelled. 
 
 #### Tenancy Application Context
 
@@ -77,6 +81,8 @@ Events in this context are always fired for a single grem instance. The recipien
 Type | Description
 -|-
 [TenantPortal.Tenant.Registered](#tenantportaltenantregistered) | A tenant has been registered in the tenant portal and an access code has been created
+
+#### 
 
 #### Masterdata.Property.Created
 
