@@ -66,6 +66,14 @@ Type | Description
 [Letting.Tenancy.Ended](#lettingtenancyended) | The tenancy for a tenant will end. This indicates that a tenant will move out or that a contractual change will happen. Be aware that this event can be cancelled. |
 [Letting.Tenancy.EndCancelled](#lettingtenancyendcancelled) | The previously reported end of tenancy has been cancelled. 
 
+#### ThirdParty Notification Context
+Type | Description
+-|-
+[ThirdParty.Tenancy.Notified](#thirdpartytenancynotified) |A third party has been notified of the begining or end of a tenancy |
+[ThirdParty.Tenancy.NotificationFailed](#thirdpartytenancynotificationfailed) | While notifing a third party a permanent error has occurred. The Notification can't be delivered to the Third Party.|
+[ThirdParty.Management.PartyDisconnected](#thirdpartymanagementpartydisconnected) | A third party is permanetly diconnected. No notification can reach the party. |
+
+
 #### Tenancy Application Context
 
 Events in this context are always fired for a single grem instance. The recipient header property must be set to the grem instance name in order to route the event to the customer, e.g. recepient: grem_demo1
@@ -81,8 +89,6 @@ Events in this context are always fired for a single grem instance. The recipien
 Type | Description
 -|-
 [TenantPortal.Tenant.Registered](#tenantportaltenantregistered) | A tenant has been registered in the tenant portal and an access code has been created
-
-#### 
 
 #### Masterdata.Property.Created
 
