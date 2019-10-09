@@ -53,6 +53,7 @@ Type | Description
 [Masterdata.Unit.Updated](#masterdataunitupdated) | Data associated to a rentable unit has changed; you get the reference plus all changed attributes
 [Masterdata.Unit.Deleted](#masterdataunitdeleted) | The unit was deleted
 [Masterdata.ManagementTeam.Updated](#masterdatamanagementteamupdated) | A change to a property management team was applied; only changed roles are published
+[Masterdata.Configuration.SedexIdChanged](#masterdataconfigurationsedexidchanged)| A REM customer has a new or changed SedexID |
 
 #### Letting Context
 
