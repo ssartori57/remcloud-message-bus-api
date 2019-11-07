@@ -123,4 +123,20 @@ data | hash |
 
 #### Example
 
-TODO
+```json
+{	"eventType": "Letting.Tenancy.Started",
+	"data": {
+		"startDate": "2019-05-25",
+		"tenancyAgreementReference": "1234.01.0001.01",
+		"unitReference": "234.01.0001",
+		"tenant": {
+			"reference": "ref",
+			"firstName": "first",
+			"surname": "last",
+			"languageCode": "FR",
+			"nationalityCode": "CH",
+			"phoneNumber": "123",
+			"email": "mail@home.ch"
+		}
+	}
+}
